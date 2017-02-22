@@ -1,22 +1,35 @@
 .photo {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (min-width:600px) {
+  .gallery {
+    display: flex;
     max-width: 600px;
     margin: 0 auto;
-
-}
-
-.quarters {
-    
-
-}
-
-@media (min-width:600px){
-
-.gallery{
-    display:flex;
-    max-width:600px;
-    margin: 0 auto;
-
-}
-
-
+  }
+  .tripled {
+    width: 33%;
+  }
+  .tripled:before {
+    content: "";
+    background: url('../images/rocket1.jpg');
+    background-size: cover;
+    transform: translate(-200px, 200px);
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000;
+    display: inline-block;
+  }
+  .tripled:after {
+    content: "";
+    background: url('../images/rocket1.jpg');
+    background-size: cover;
+    transform: translate(200px, -200px);
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000;
+    display: inline-block;
+  }
 }
