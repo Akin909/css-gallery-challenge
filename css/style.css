@@ -1,0 +1,22 @@
+.photo {
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+
+.quarters {
+    
+
+}
+
+@media (min-width:600px){
+
+.gallery{
+    display:flex;
+    max-width:600px;
+    margin: 0 auto;
+
+}
+
+
+}
